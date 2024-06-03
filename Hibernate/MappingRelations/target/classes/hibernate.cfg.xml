@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+      <property name="hibernate.connection.password">NMFPS2002N</property>
+      <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/employee</property>
+      <property name="hibernate.connection.username">root</property>
+
+    <!-- DB schema will be updated if needed -->
+     <property name="hibernate.hbm2ddl.auto">create</property>
+  </session-factory>
+</hibernate-configuration>
