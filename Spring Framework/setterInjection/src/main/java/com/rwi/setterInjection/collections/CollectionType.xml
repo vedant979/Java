@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+xmlns:mvc="http://www.springframework.org/schema/mvc"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+         http://www.springframework.org/schema/data/jpa
+        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+	<bean class="com.rwi.spring1.collections.Student1" name="student1">
+		<property name="id">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+			</set>
+		</property>
+		<property name="name">
+			<list>
+				<value>vedant</value>
+				<value>priyansh</value>
+				<value>anshu</value>
+				<value>harshu</value>
+			</list>
+		</property>
+		<property name="phone">
+			<list>
+				<value>123456789</value>
+				<value>123456788</value>
+				<value>123456787</value>
+				<value>123456786</value>
+			</list>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="Java" value="3 Months"></entry>
+				<entry key="C++" value="3 Months"></entry>
+				<entry key="C#" value="6 Months"></entry>	
+				<entry key="Python" value="3 Months"></entry>			
+			</map>
+		</property>
+	</bean>
+	
+	
+	
+</beans>
